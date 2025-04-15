@@ -1,0 +1,27 @@
+Generating train split: 9076 examples [00:00, 11023.61 examples/s]
+Map: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 7260/7260 [00:19<00:00, 365.47 examples/s]
+Map: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 1816/1816 [00:05<00:00, 359.51 examples/s]
+/usr1/home/s124mdg41_08/dev/Capstone/scripts/train.py:82: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `Trainer.__init__`. Use `processing_class` instead.
+  trainer = Trainer(
+No label_names provided for model class `PeftModelForCausalLM`. Since `PeftModel` hides base models input arguments, if label_names is not given, label_names can't be set automatically within `Trainer`. Note that empty label_names list will be used instead.
+[34m[1mwandb[0m: [33mWARNING[0m The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+ 33%|███████████████████████████████████████▎                                                                              | 56/168 [08:08<16:28,  8.82s/it]/usr1/home/s124mdg41_08/miniconda3/lib/python3.12/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+{'loss': 0.541, 'grad_norm': 0.04940170794725418, 'learning_rate': 4.4345238095238095e-05, 'epoch': 0.35}
+{'loss': 0.5337, 'grad_norm': 0.04901551455259323, 'learning_rate': 3.839285714285715e-05, 'epoch': 0.7}
+  warnings.warn(
+ 67%|██████████████████████████████████████████████████████████████████                                 | 112/168 [18:06<08:13,  8.81s/it]/usr1/home/s124mdg41_08/miniconda3/lib/python3.12/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn(                                                                                                                                            
+{'eval_loss': 2.14591908454895, 'eval_runtime': 101.7833, 'eval_samples_per_second': 17.842, 'eval_steps_per_second': 1.12, 'epoch': 0.99}
+{'loss': 0.5772, 'grad_norm': 0.07081182301044464, 'learning_rate': 3.244047619047619e-05, 'epoch': 1.07}
+{'loss': 0.5262, 'grad_norm': 0.07096198946237564, 'learning_rate': 2.648809523809524e-05, 'epoch': 1.42}
+{'loss': 0.5239, 'grad_norm': 0.06207215040922165, 'learning_rate': 2.0535714285714285e-05, 'epoch': 1.78}
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 168/168 [28:04<00:00,  8.80s/it]/usr1/home/s124mdg41_08/miniconda3/lib/python3.12/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn(                                                                                                                                              
+{'eval_loss': 2.10290265083313, 'eval_runtime': 100.4145, 'eval_samples_per_second': 18.085, 'eval_steps_per_second': 1.135, 'epoch': 1.99}
+{'loss': 0.5342, 'grad_norm': 0.05881517007946968, 'learning_rate': 1.4583333333333335e-05, 'epoch': 2.14}
+{'loss': 0.5072, 'grad_norm': 0.06800070405006409, 'learning_rate': 8.630952380952381e-06, 'epoch': 2.49}
+{'loss': 0.5143, 'grad_norm': 0.0671418309211731, 'learning_rate': 2.6785714285714285e-06, 'epoch': 2.85}
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 168/168 [29:45<00:00, 10.63s/it]
+                                                                                                                                                              
+{'eval_loss': 2.088456869125366, 'eval_runtime': 100.7203, 'eval_samples_per_second': 18.03, 'eval_steps_per_second': 1.132, 'epoch': 2.99}
+{'train_runtime': 1785.88, 'train_samples_per_second': 12.196, 'train_steps_per_second': 0.094, 'train_loss': 0.5311709954625085, 'epoch': 2.99}

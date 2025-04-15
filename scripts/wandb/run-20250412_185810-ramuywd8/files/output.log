@@ -1,0 +1,31 @@
+Generating train split: 9076 examples [00:00, 11040.78 examples/s]
+Map: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 7260/7260 [00:20<00:00, 351.43 examples/s]
+Map: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 1816/1816 [00:05<00:00, 353.37 examples/s]
+/usr1/home/s124mdg41_08/dev/Capstone/scripts/train.py:82: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `Trainer.__init__`. Use `processing_class` instead.
+  trainer = Trainer(
+No label_names provided for model class `PeftModelForCausalLM`. Since `PeftModel` hides base models input arguments, if label_names is not given, label_names can't be set automatically within `Trainer`. Note that empty label_names list will be used instead.
+[34m[1mwandb[0m: [33mWARNING[0m The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+  9%|██████████▌                                                                                                           | 61/681 [02:05<21:35,  2.09s/it]Traceback (most recent call last):
+{'loss': 0.5324, 'grad_norm': 0.06811704486608505, 'learning_rate': 4.86049926578561e-05, 'epoch': 0.09}
+{'loss': 0.5308, 'grad_norm': 0.09363068640232086, 'learning_rate': 4.7136563876651986e-05, 'epoch': 0.18}
+{'loss': 0.5264, 'grad_norm': 0.07759163528680801, 'learning_rate': 4.5668135095447874e-05, 'epoch': 0.26}
+  File "/usr1/home/s124mdg41_08/dev/Capstone/scripts/train.py", line 91, in <module>
+    trainer.train()
+  File "/usr1/home/s124mdg41_08/miniconda3/lib/python3.12/site-packages/transformers/trainer.py", line 2245, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr1/home/s124mdg41_08/miniconda3/lib/python3.12/site-packages/transformers/trainer.py", line 2560, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr1/home/s124mdg41_08/miniconda3/lib/python3.12/site-packages/transformers/trainer.py", line 3782, in training_step
+    self.accelerator.backward(loss, **kwargs)
+  File "/usr1/home/s124mdg41_08/miniconda3/lib/python3.12/site-packages/accelerate/accelerator.py", line 2454, in backward
+    loss.backward(**kwargs)
+  File "/usr1/home/s124mdg41_08/miniconda3/lib/python3.12/site-packages/torch/_tensor.py", line 626, in backward
+    torch.autograd.backward(
+  File "/usr1/home/s124mdg41_08/miniconda3/lib/python3.12/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/usr1/home/s124mdg41_08/miniconda3/lib/python3.12/site-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

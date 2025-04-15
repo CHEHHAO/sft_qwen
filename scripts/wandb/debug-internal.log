@@ -1,0 +1,16 @@
+{"time":"2025-04-12T19:01:02.040649609+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/usr1/home/s124mdg41_08/dev/Capstone/scripts/wandb/run-20250412_190102-oxtz69dy/logs/debug-core.log"}
+{"time":"2025-04-12T19:01:02.38200617+08:00","level":"INFO","msg":"created new stream","id":"oxtz69dy"}
+{"time":"2025-04-12T19:01:02.382062245+08:00","level":"INFO","msg":"stream: started","id":"oxtz69dy"}
+{"time":"2025-04-12T19:01:02.382082253+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"oxtz69dy"}
+{"time":"2025-04-12T19:01:02.382111928+08:00","level":"INFO","msg":"sender: started","stream_id":"oxtz69dy"}
+{"time":"2025-04-12T19:01:02.382223157+08:00","level":"INFO","msg":"handler: started","stream_id":"oxtz69dy"}
+{"time":"2025-04-12T19:01:02.675314244+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-12T19:31:17.138490607+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-12T19:31:17.138595544+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-12T19:31:18.140024027+08:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.739022218,"progress":"529B/529B"},{"desc":"uploading config.yaml","runtime_seconds":0.456114251,"progress":"10.1KB/10.1KB"}],"total_operations":2}}
+{"time":"2025-04-12T19:31:18.658934155+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-12T19:31:18.911580265+08:00","level":"INFO","msg":"stream: closing","id":"oxtz69dy"}
+{"time":"2025-04-12T19:31:18.911617265+08:00","level":"INFO","msg":"handler: closed","stream_id":"oxtz69dy"}
+{"time":"2025-04-12T19:31:18.911642412+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"oxtz69dy"}
+{"time":"2025-04-12T19:31:18.911659795+08:00","level":"INFO","msg":"sender: closed","stream_id":"oxtz69dy"}
+{"time":"2025-04-12T19:31:18.911794408+08:00","level":"INFO","msg":"stream: closed","id":"oxtz69dy"}
